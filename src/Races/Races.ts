@@ -4,12 +4,12 @@ export default abstract class Races {
     private _dexterity: number,
   ) {}
 
-  get name(): string { return this._name; }
-  get dexterity(): number { return this._dexterity; }
+  public get name(): string { return this._name; }
+  public get dexterity(): number { return this._dexterity; }
 
-  abstract get maxLifePoints(): number;
+  public abstract get maxLifePoints(): number;
 
-  static createdRacesInstances(): number {
+  public static createdRacesInstances(): number {
     throw new Error('Not implemented');
   }
 }
