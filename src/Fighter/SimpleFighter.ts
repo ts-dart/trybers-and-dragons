@@ -1,19 +1,19 @@
-/* export default interface SimpleFighter {
+export default interface SimpleFighter {
   lifePoints: number,
   strength: number,
-  defense: number,
+  defense?: number,
   attack(enemy: SimpleFighter): void;
-  levelUp(): void,
+  levelUp?(): void,
   receiveDamage(attackPoints: number): number;
-} */
+}
 
-import Fighter from './Fighter';
+/* import Fighter from './Fighter';
 
-interface MonsterFighter {
+export default interface MonsterFighter {
   lifePoints: number,
   strength: number,
   attack(enemy: SimpleFighter): void,
   receiveDamage(attackPoints: number): number;
 }
 
-export default interface SimpleFighter extends Fighter, MonsterFighter {}
+export interface SimpleFighter extends Fighter, MonsterFighter {} */
